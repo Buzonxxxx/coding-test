@@ -20,10 +20,10 @@ const rank = num => {
             result.push(person)
         }
     }
-    console.log(result);
     
     // return rank
     return result[result.length -1]
 }
 
-console.log(rank(3));
+console.log(rank(30));
+console.log(rank(100));
