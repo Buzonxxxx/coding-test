@@ -5,7 +5,7 @@
 // 輸出：第幾順位
 
 const rank = num => {
-    if (num < 0 || num > 100) return false
+    if (num <= 0 || num > 100) return false
 
     // create all people array
     let people = []
@@ -25,5 +25,6 @@ const rank = num => {
     return result[result.length -1]
 }
 
+console.log(rank(0));
 console.log(rank(30));
 console.log(rank(100));
