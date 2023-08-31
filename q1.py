@@ -5,6 +5,7 @@
 輸出: [53, 64, 75, 19, 92]
 """
 
+
 def correctScore(scores):
     if len(scores) == 0: return False
     result = []
@@ -13,4 +14,5 @@ def correctScore(scores):
         result.append(score)
     return result
 
-print(correctScore([35, 46, 57, 91, 29]));
+
+print(correctScore([35, 46, 57, 91, 29]))

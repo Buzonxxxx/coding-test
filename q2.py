@@ -11,19 +11,21 @@ H 3
 ....(繼續印下去)
 """
 
+
 def charCount(s):
-    if len(s)== 0: return False
+    if len(s) == 0: return False
     result = {}
-    s = s.replace(' ', '').upper() # HELLOWELCOMETOCATHAY60THYEARANNIVERSARY
-    sorted_str = ''.join(sorted(s)) # 06AAAAACCEEEEEHHHILLLMNNOOORRRSTTTVWYYY
-    
+    s = s.replace(' ', '').upper()  # HELLOWELCOMETOCATHAY60THYEARANNIVERSARY
+    sorted_str = ''.join(sorted(s))  # 06AAAAACCEEEEEHHHILLLMNNOOORRRSTTTVWYYY
+
     for char in sorted_str:
         if char in result:
             result[char] += 1
         else:
             result[char] = 1
-    
+
     for char, count in result.items():
         print(char, count)
+
 
 charCount("Hello welcome to Cathay 60th year anniversary")

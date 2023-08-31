@@ -6,18 +6,20 @@ QA部門今天舉辦團康活動，有n個人圍成一圈，順序排號。從�
 輸出：第幾順位
 """
 
+
 def rank(num):
     if num <= 0 or num > 100: return False
     result = []
-    
+
     # create all people array
     people = list(range(1, num + 1))
-    
+
     # filter people
-    for n in people:
-        if n % 3 != 0:
-            result.append(n)
+    for person in people:
+        if person % 3 != 0:
+            result.append(person)
     return result[-1]
+
 
 print(rank(0))
 print(rank(30))
